@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>ejercicio 4</title>
+
+	<link  rel="stylesheet" type='text/css'>
+
+	<style type="text/css">	
+		.container {
+			width: 480px;
+		}
+		p{
+			font-size: 50px;
+			background-color: whitesmoke; 
+		}
+	</style>
+
+	<script type="text/javascript">
+
+		 function changeColor(obj) {
+            if (obj.style.color == 'orange') {
+                obj.style.color = 'black';
+            } else {
+                obj.style.color = 'orange';
+            }
+        }
+
+	</script>
+</head>
+<body>
+	<div class="container">
+   <p onmouseover="changeColor(this)" onmouseout="changeColor(this)">hola mundo</p>
+	</div>
+</body>
+</html>
