@@ -2,20 +2,30 @@
 <html>
 <head>
 	<title>ejercicio 6</title>
+	<script type="text/javascript">
+	function rellenar(array)
+	{
+	var largo, num, i;
+	largo = array.length;
+	for(i = 0; i < largo; i++)
+	   {
+    num = Math.random()*20;
+   	 array[i] = Math.round(num);
+   	}
+	}
+  </script>
 </head>
 <body>
-	<input type="button" value="generar numero aleatorio" onclick="generar()">
-	<span>el numero generado es</span>
-	<span id="numero"> numero generado </span> <br>
+	
+	<span>haga click para generar</span> <br>
+	<input type="button" value="generar numero aleatorio" onclick="generar()"> <br>
 	<script type="text/javascript">
-		function generar (){
+		function generar(){
+		var lista=new Array(10);
+		rellenar(lista);
+		document.write("los numeros son",lista);
+	 	}
+    </script>
 
- 		var num = Math.round(Math.random()*10); 
- 		document.getElementById("numero").innerHTML=num; 
- 			}
-
-
-
-	</script>
 </body>
 </html>

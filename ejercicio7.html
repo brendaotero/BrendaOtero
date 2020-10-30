@@ -1,41 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>ejercicio 7</title>
-	<script type="text/javascript">
-		function changeColor1(obj) {
-            if (obj.style.color == 'red') {
-                obj.style.color = 'black';
-            } else {
-                obj.style.color = 'red';
-            }
-        }
-        function changeColor2(obj) {
-            if (obj.style.color == 'blue') {
-                obj.style.color = 'black';
-            } else {
-                obj.style.color = 'blue';
-            }
-            document.getElementById('color').innerHTML=color;
-        }
-        function changeColor3(obj) {
-            if (obj.style.color == 'green') {
-                obj.style.color = 'black';
-            } else {
-                obj.style.color = 'green';
-            }
-        }
-	</script>
-
-
-
+	<title>ejercicio 7 </title>
 </head>
 <body>
-	<input type="button" value="rojo" onclick="changecolor1()">
-	<input type="button" value="verde" onclick="changecolor2()">
-	<input type="button" value="azul" onclick="changecolor3()">
+	<div class="container">
+      <button onclick="cambioTexto('red')">Rojo</button>
+      <button onclick="cambioTexto('blue')">Azul</button>
+      <button onclick="cambioTexto('green')">verde</button>
+      <span id='colorid'>Colores</span>
+</div>
+ <script type="text/javascript">
+	function cambioTexto(color){
+	let boton=document.getElementById('colorid');
+	boton.style.color= color;
+}
 
-	<li id="color">COLORES</li>
-
+ </script>
 </body>
 </html>

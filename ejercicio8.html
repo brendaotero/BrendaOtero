@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ejercicio 8</title>
+	  <script type="text/javascript">
+  		function alerta(){
+  		var mensaje;
+  		var opcion = prompt("Introduzca su nombre:");
+  		var opcion2 = prompt("Introduzca su apellido:");
+ 
+   			if (opcion == null || opcion == "") {
+        		mensaje = "nombre vacio";
+        		} else {
+            	mensaje = "Hola " + opcion + ","+ opcion2;
+            	}
+            	document.getElementById("ejemplo").innerHTML = mensaje;
+ 						 }
+       </script>
+</head>
+<body>
+  <p id="ejemplo">Bienvenido, introduzca sus datos</p>
+  <input type="button" value="INGRESAR" onclick="alerta()">
+</body>
+</html>
