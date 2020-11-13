@@ -26,18 +26,24 @@
   </script>
 </head>
 <body>
-        <h3>Select Ejercicio Ajax y PHP</h3>
+
+        <div class="badge badge-primary text-wrap" style="width: 28rem;">
+          Ejercicio Ajax y PHP
+        </div>
         <hr>
-            <h3>Pais</h3>
-            <select name="select" id="select" class="col-4 form-control" onclick="ejselect()">
+        <div class="form-group">
+             <h3>Pais</h3>
+            <select name="select" id="selectpais" class="col-4 form-control" onchange="ejselect(this.value)">
+              <option>seleccione</option>
               <?php include "trabajo.php" ?>
             </select>
             <br>
             <h3>Provincia</h3>
             <div id="div">
               <select name="select" id="select" class="col-4 form-control">
-                <option value="">Selecione</option>
+                <option value="" class="col-4 form-control">Selecione</option>
               </select>
             </div>
+         </div>   
 </body>
 </html>

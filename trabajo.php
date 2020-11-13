@@ -14,7 +14,7 @@
   $ejecutarConsulta = mysqli_query($enlace, $consulta);
 
   while($fila = mysqli_fetch_array($ejecutarConsulta)){
-    echo"<option value='".$fila['id']."'>".$fila['nombre']."</option>";
+    echo"<option value='".$fila['id']."'>".$fila['nombres']."</option>";
   }
 
   mysqli_close($enlace);
