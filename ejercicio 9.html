@@ -5,23 +5,20 @@
 </head>
 <body>
   <p>por favor, ingrese su anio de nacimiento</p>
-  <input type="text" id="anio">
+  <input type="text" id="fechanacimiento">
+  <p> por favor ingrese fecha actual</p>
   <input type="button" value="calcular edad" onclick="calcular()">
   la edad es <input type="resultado" id="res">
-
   <script type="text/javascript">
   	function calcular (){
-  		var num1=Number(document.getElementById('anio').value);
-  		var res= 2020 - num1;
+  		let fechanacimiento = new Date(document.getElementById('fechanacimiento').value);
+     let ahora = new Date();
+     let res = ahora.getFullYear() - fechanacimiento.getFullYear();
+      
   		document.getElementById('res').value=res;
 	
   	}
-
   </script>
-
-
-
-
 
 </body>
 </html>
